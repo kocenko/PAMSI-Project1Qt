@@ -25,29 +25,16 @@
   <property name="windowTitle">
    <string>JanDoAni</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(117, 80, 123)</string>
+  <property name="autoFillBackground">
+   <bool>false</bool>
   </property>
   <property name="dockNestingEnabled">
    <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="add_text">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>530</y>
-      <width>161</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 11pt &quot;Ubuntu Mono&quot;;</string>
-    </property>
-    <property name="text">
-     <string>Dodaj tekst</string>
-    </property>
-   </widget>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(117, 80, 123);</string>
+   </property>
    <widget class="QWidget" name="add_text_window" native="true">
     <property name="geometry">
      <rect>
@@ -110,10 +97,10 @@
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>40</x>
+       <x>20</x>
        <y>90</y>
-       <width>451</width>
-       <height>131</height>
+       <width>487</width>
+       <height>168</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="whole_menu_layout">
@@ -203,7 +190,7 @@
        <widget class="QLabel" name="label_current_message">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(243, 243, 243);
-font: 11pt &quot;Ubuntu Mono&quot;;</string>
+font: 13pt &quot;Ubuntu Mono&quot;;</string>
         </property>
         <property name="text">
          <string>Bieżąca wiadomość:</string>
@@ -238,7 +225,7 @@ font: 14pt &quot;Ubuntu Mono&quot;;</string>
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="exit_button">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -254,6 +241,153 @@ font: 14pt &quot;Ubuntu Mono&quot;;</string>
      <string/>
     </property>
    </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>781</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QFrame" name="message_table_labels">
+       <layout class="QHBoxLayout" name="message_tables_labels">
+        <item>
+         <widget class="QLabel" name="sent_table_label">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(243, 243, 243);
+font: 13pt &quot;Ubuntu Mono&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Wysłano</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="shuffled_table_label">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(243, 243, 243);
+font: 13pt &quot;Ubuntu Mono&quot;;</string>
+          </property>
+          <property name="text">
+           <string>W trakcie przesyłania</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="received_table_label">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(243, 243, 243);
+font: 13pt &quot;Ubuntu Mono&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Otrzymano</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="message_tables">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QListWidget" name="sent">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(243, 243, 243);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="shuffled">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(243, 243, 243);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="received">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(243, 243, 243);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>751</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="message_buttons">
+     <item>
+      <widget class="QPushButton" name="add_text">
+       <property name="styleSheet">
+        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Dodaj tekst</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="send_message_button">
+       <property name="styleSheet">
+        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Wyślij wiadomość</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="shuffle_button">
+       <property name="styleSheet">
+        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Poczekaj, aż dotrze</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="receive_button">
+       <property name="styleSheet">
+        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Odbierz wiadomość</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>add_text</zorder>
+   <zorder>current_message_layout_2</zorder>
+   <zorder>exit_button</zorder>
+   <zorder>send_message_button</zorder>
+   <zorder>add_text_window</zorder>
+   <zorder>shuffle_button</zorder>
+   <zorder>receive_button</zorder>
   </widget>
  </widget>
  <resources/>
@@ -291,7 +425,7 @@ font: 14pt &quot;Ubuntu Mono&quot;;</string>
    </hints>
   </connection>
   <connection>
-   <sender>pushButton</sender>
+   <sender>exit_button</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>

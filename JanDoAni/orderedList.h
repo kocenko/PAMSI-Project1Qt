@@ -13,6 +13,7 @@ public:
 
     // Getter
     int* getKeys() const;
+    T** getValues() const;
 
     int size() const;
     int findSmallestKey();

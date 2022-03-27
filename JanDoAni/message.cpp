@@ -70,6 +70,7 @@ OrderedList<std::string>* Message::shuffle(OrderedList<std::string>* list_to_shu
 
         new_list->addNode(current_key, current_value);
     }
+    delete keys;
     delete list_to_shuffle;
 
     return new_list;
@@ -79,8 +80,6 @@ OrderedList<std::string>* Message::receive(OrderedList<std::string>* list_to_shu
     OrderedList<std::string>* new_list = new OrderedList<std::string>();
     Node<std::string>* current_node;
     std::string* current_value;
-    int current_size = list_to_shuffle->size();
-    int current_index;
     int current_key;
 
     while(list_to_shuffle->size() > 0){

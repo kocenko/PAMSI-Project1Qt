@@ -21,9 +21,16 @@ public:
 private slots:
     void on_submit_button_clicked();
 
+    void on_send_message_button_clicked();
+
+    void on_shuffle_button_clicked();
+
+    void on_receive_button_clicked();
+
 private:
     Ui::MainWindow *ui;
     Message* msg;
+    OrderedList<std::string>* current_message;
     int packages_num;
 };
 

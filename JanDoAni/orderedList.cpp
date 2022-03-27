@@ -26,6 +26,22 @@ int* OrderedList<T>::getKeys() const{
 }
 
 template<typename T>
+T** OrderedList<T>::getValues() const{
+    Node<T>* node_to_read = head;
+    int array_size = size();
+    T** array_of_values = new T*[array_size];
+    int iterator = 0;
+
+    while(node_to_read != nullptr){
+        array_of_values[iterator] = node_to_read->getValue();
+        iterator++;
+        node_to_read = node_to_read->getPrevious();
+    }
+
+    return array_of_values;
+}
+
+template<typename T>
 int OrderedList<T>::size() const{
     Node<T>* node_to_read = head;
     int temp_size = 0;
