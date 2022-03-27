@@ -107,7 +107,7 @@
       <set>Qt::NoTextInteraction</set>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -238,6 +238,22 @@ font: 14pt &quot;Ubuntu Mono&quot;;</string>
      </property>
     </widget>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color : rgba(164, 0, 0, 255)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
@@ -271,6 +287,22 @@ font: 14pt &quot;Ubuntu Mono&quot;;</string>
     <hint type="destinationlabel">
      <x>527</x>
      <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>38</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>26</y>
     </hint>
    </hints>
   </connection>
