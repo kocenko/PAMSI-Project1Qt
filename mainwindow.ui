@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>JanDoAni</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(117, 80, 123)</string>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="add_text">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>530</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Ubuntu Mono&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Dodaj tekst</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="add_text_window" native="true">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>120</y>
+      <width>521</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(173, 127, 168)</string>
+    </property>
+    <widget class="QPushButton" name="close_add_window">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>311</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 11pt &quot;Ubuntu Mono&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Zamknij okno</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_add_text">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>501</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 16pt &quot;Ubuntu Mono&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Dodaj tekst wiadomości, jaką chce wysłać Jan</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::NoTextInteraction</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>451</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="whole_menu_layout">
+      <item>
+       <widget class="QPlainTextEdit" name="input_text">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(243, 243, 243)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="message_button_menu">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="submit_button">
+           <property name="text">
+            <string>Zatwierdź</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="menu_spacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>60</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_packages_num">
+           <property name="text">
+            <string>Ilość paczek:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="packages_counter">
+           <property name="styleSheet">
+            <string notr="true">font: 15pt &quot;Ubuntu Mono&quot;;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="current_message_layout_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>431</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="opaqueResize">
+     <bool>false</bool>
+    </property>
+    <property name="childrenCollapsible">
+     <bool>false</bool>
+    </property>
+    <widget class="QFrame" name="current_message">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(243, 243, 243)</string>
+     </property>
+     <layout class="QHBoxLayout" name="current_message_layout">
+      <item>
+       <widget class="QLabel" name="label_current_message">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(243, 243, 243);
+font: 11pt &quot;Ubuntu Mono&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Bieżąca wiadomość:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="current_msg">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(243, 243, 243);
+font: 14pt &quot;Ubuntu Mono&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="package_counter_display">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(243, 243, 243)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>add_text</sender>
+   <signal>clicked()</signal>
+   <receiver>add_text_window</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>554</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>403</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>close_add_window</sender>
+   <signal>clicked()</signal>
+   <receiver>add_text_window</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>457</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>527</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
