@@ -28,12 +28,16 @@
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
+  <property name="styleSheet">
+   <string notr="true">;
+background-color: rgb(0, 55, 141);</string>
+  </property>
   <property name="dockNestingEnabled">
    <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(117, 80, 123);</string>
+    <string notr="true">color: rgb(32, 74, 135);</string>
    </property>
    <widget class="QWidget" name="add_text_window" native="true">
     <property name="geometry">
@@ -44,8 +48,72 @@
       <height>351</height>
      </rect>
     </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>243</red>
+          <green>243</green>
+          <blue>243</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>211</red>
+          <green>215</green>
+          <blue>207</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>32</red>
+          <green>74</green>
+          <blue>135</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>32</red>
+          <green>74</green>
+          <blue>135</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(173, 127, 168)</string>
+     <string notr="true">background-color: rgb(52, 101, 164);</string>
     </property>
     <widget class="QPushButton" name="close_add_window">
      <property name="geometry">
@@ -76,7 +144,8 @@
       <enum>Qt::LeftToRight</enum>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 16pt &quot;Ubuntu Mono&quot;;</string>
+      <string notr="true">font: 16pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(243, 243, 243);</string>
      </property>
      <property name="text">
       <string>Dodaj tekst wiadomości, jaką chce wysłać Jan</string>
@@ -139,6 +208,9 @@
          </item>
          <item>
           <widget class="QLabel" name="label_packages_num">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(243, 243, 243);</string>
+           </property>
            <property name="text">
             <string>Ilość paczek:</string>
            </property>
@@ -147,7 +219,8 @@
          <item>
           <widget class="QSpinBox" name="packages_counter">
            <property name="styleSheet">
-            <string notr="true">font: 15pt &quot;Ubuntu Mono&quot;;</string>
+            <string notr="true">font: 15pt &quot;Ubuntu Mono&quot;;
+color: rgb(243, 243, 243);</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -233,6 +306,9 @@ font: 14pt &quot;Ubuntu Mono&quot;;</string>
       <width>31</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color : rgba(164, 0, 0, 255)</string>
@@ -328,7 +404,7 @@ font: 13pt &quot;Ubuntu Mono&quot;;</string>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -341,7 +417,8 @@ font: 13pt &quot;Ubuntu Mono&quot;;</string>
      <item>
       <widget class="QPushButton" name="add_text">
        <property name="styleSheet">
-        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;</string>
+        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(243, 243, 243);</string>
        </property>
        <property name="text">
         <string>Dodaj tekst</string>
@@ -351,7 +428,8 @@ font: 13pt &quot;Ubuntu Mono&quot;;</string>
      <item>
       <widget class="QPushButton" name="send_message_button">
        <property name="styleSheet">
-        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;</string>
+        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(243, 243, 243);</string>
        </property>
        <property name="text">
         <string>Wyślij wiadomość</string>
@@ -361,7 +439,8 @@ font: 13pt &quot;Ubuntu Mono&quot;;</string>
      <item>
       <widget class="QPushButton" name="shuffle_button">
        <property name="styleSheet">
-        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;</string>
+        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(243, 243, 243);</string>
        </property>
        <property name="text">
         <string>Poczekaj, aż dotrze</string>
@@ -371,7 +450,8 @@ font: 13pt &quot;Ubuntu Mono&quot;;</string>
      <item>
       <widget class="QPushButton" name="receive_button">
        <property name="styleSheet">
-        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;</string>
+        <string notr="true">font: 13pt &quot;Ubuntu Mono&quot;;
+background-color: rgb(243, 243, 243);</string>
        </property>
        <property name="text">
         <string>Odbierz wiadomość</string>
@@ -381,13 +461,10 @@ font: 13pt &quot;Ubuntu Mono&quot;;</string>
     </layout>
    </widget>
    <zorder>layoutWidget</zorder>
-   <zorder>add_text</zorder>
+   <zorder>layoutWidget</zorder>
    <zorder>current_message_layout_2</zorder>
    <zorder>exit_button</zorder>
-   <zorder>send_message_button</zorder>
    <zorder>add_text_window</zorder>
-   <zorder>shuffle_button</zorder>
-   <zorder>receive_button</zorder>
   </widget>
  </widget>
  <resources/>
