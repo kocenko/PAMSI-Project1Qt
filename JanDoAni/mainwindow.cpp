@@ -7,6 +7,7 @@
 MainWindow::MainWindow(QWidget *parent):QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->centralwidget->setStyleSheet("background-image: url(:/Images/Background.png)");
     ui->add_text_window->hide();
     msg = new Message();
     current_message = new OrderedList<std::string>();
@@ -44,7 +45,7 @@ void MainWindow::on_submit_button_clicked()
     ui->package_counter_display->setText(received_number);
     ui->input_text->clear();
 
-    std::cout << msg->getText() << std::endl;
+    std::cout << "Added mesage: " << msg->getText() << std::endl;
 }
 
 
