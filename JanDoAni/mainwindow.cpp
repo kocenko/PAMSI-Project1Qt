@@ -7,7 +7,6 @@
 MainWindow::MainWindow(QWidget *parent):QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    ui->centralwidget->setStyleSheet("background-image: url(:/Images/Background.png)");
     ui->add_text_window->hide();
     msg = new Message();
     current_message = new OrderedList<std::string>();
@@ -58,7 +57,7 @@ void MainWindow::on_send_message_button_clicked()
         if (ui->sent->count()) ui->sent->clear();
 
         current_message = msg->sendMessage(packages_num);
-        for(int i=current_message->size()-1; i>=0; --i){
+        for(int i=current_message->getSize()-1; i>=0; --i){
             ui->sent->addItem(QString::fromStdString(std::to_string(current_message->getKeys()[i])
                                                      + ". paczka -> "
                                                      + *current_message->getValues()[i]));
@@ -76,7 +75,7 @@ void MainWindow::on_shuffle_button_clicked()
         if (ui->shuffled->count()) ui->shuffled->clear();
 
         current_message = msg->shuffle(current_message);
-        for(int i=current_message->size()-1; i>=0; --i){
+        for(int i=current_message->getSize()-1; i>=0; --i){
             ui->shuffled->addItem(QString::fromStdString(std::to_string(current_message->getKeys()[i])
                                                         + ". paczka -> "
                                                         + *current_message->getValues()[i]));
@@ -94,7 +93,7 @@ void MainWindow::on_receive_button_clicked()
         if (ui->received->count()) ui->received->clear();
 
         current_message = msg->receive(current_message);
-        for(int i=current_message->size()-1; i>=0; --i){
+        for(int i=current_message->getSize()-1; i>=0; --i){
             ui->received->addItem(QString::fromStdString(std::to_string(current_message->getKeys()[i])
                                                         + ". paczka -> "
                                                         + *current_message->getValues()[i]));

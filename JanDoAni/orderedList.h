@@ -8,14 +8,18 @@ template<typename T>
 class OrderedList{
 private:
     Node<T>* head;
+    int size;
 public:
     OrderedList();
 
     // Getter
     int* getKeys() const;
     T** getValues() const;
+    int getSize() const;
 
-    int size() const;
+    // Setter
+    void setSize(int new_value);
+
     int findSmallestKey();
     Node<T>* removeAny(int given_key);
     Node<T>* removeMin();

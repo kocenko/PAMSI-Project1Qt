@@ -7,12 +7,13 @@
 template<typename T>
 OrderedList<T>::OrderedList(){
     head = nullptr;
+    size = 0;
 }
 
 template<typename T>
 int* OrderedList<T>::getKeys() const{
     Node<T>* node_to_read = head;
-    int array_size = size();
+    int array_size = getSize();
     int* array_of_keys = new int[array_size];
     int iterator = 0;
 
@@ -28,7 +29,7 @@ int* OrderedList<T>::getKeys() const{
 template<typename T>
 T** OrderedList<T>::getValues() const{
     Node<T>* node_to_read = head;
-    int array_size = size();
+    int array_size = getSize();
     T** array_of_values = new T*[array_size];
     int iterator = 0;
 
@@ -42,14 +43,13 @@ T** OrderedList<T>::getValues() const{
 }
 
 template<typename T>
-int OrderedList<T>::size() const{
-    Node<T>* node_to_read = head;
-    int temp_size = 0;
-    while(node_to_read != nullptr){
-        temp_size++;
-        node_to_read = node_to_read->getPrevious();
-    }
-    return temp_size;
+int OrderedList<T>::getSize() const{
+    return size;
+}
+
+template<typename T>
+void OrderedList<T>::setSize(int new_value){
+    size = new_value;
 }
 
 template<typename T>
@@ -58,7 +58,7 @@ int OrderedList<T>::findSmallestKey(){
     int smallest_key = -1;
     int node_key;
 
-    if (!size()){
+    if (!getSize()){
         std::cerr << "Cannot find the smallest key. The list is empty" << std::endl;
         return smallest_key;
     }
@@ -118,6 +118,8 @@ Node<T>* OrderedList<T>::removeAny(int given_key){
     node_to_read->setNext(nullptr);
     node_to_read->setPrevious(nullptr);
 
+    setSize(getSize()-1);
+
     return node_to_read;
 }
 
@@ -141,6 +143,7 @@ void OrderedList<T>::addNode(int param_key, T* param_value){
         head->setNext(new_node);
         head = new_node;
     }
+    setSize(getSize()+1);
 }
 
 template<typename T>
