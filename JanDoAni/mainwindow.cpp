@@ -1,8 +1,14 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "message.h"
+#include "orderedList.h"
 
+#include <QTimer>
+#include <QListWidget>
 #include <iostream>
+
+#define SLEEP_TIME_MS 300
+
 
 MainWindow::MainWindow(QWidget *parent):QMainWindow(parent), ui(new Ui::MainWindow)
 {
@@ -58,9 +64,7 @@ void MainWindow::on_send_message_button_clicked()
 
         current_message = msg->sendMessage(packages_num);
         for(int i=current_message->getSize()-1; i>=0; --i){
-            ui->sent->addItem(QString::fromStdString(std::to_string(current_message->getKeys()[i])
-                                                     + ". paczka -> "
-                                                     + *current_message->getValues()[i]));
+            display_lines(ui->sent, current_message, i);
         }
     }
 }
@@ -76,13 +80,10 @@ void MainWindow::on_shuffle_button_clicked()
 
         current_message = msg->shuffle(current_message);
         for(int i=current_message->getSize()-1; i>=0; --i){
-            ui->shuffled->addItem(QString::fromStdString(std::to_string(current_message->getKeys()[i])
-                                                        + ". paczka -> "
-                                                        + *current_message->getValues()[i]));
+            display_lines(ui->shuffled, current_message, i);
         }
     }
 }
-
 
 void MainWindow::on_receive_button_clicked()
 {
@@ -94,10 +95,17 @@ void MainWindow::on_receive_button_clicked()
 
         current_message = msg->receive(current_message);
         for(int i=current_message->getSize()-1; i>=0; --i){
-            ui->received->addItem(QString::fromStdString(std::to_string(current_message->getKeys()[i])
-                                                        + ". paczka -> "
-                                                        + *current_message->getValues()[i]));
+            display_lines(ui->received, current_message, i);
         }
     }
 }
 
+void MainWindow::display_lines(QListWidget* table, OrderedList<std::string>* line, int index)
+{
+    int* keys = line->getKeys();
+    std::string** values = line->getValues();
+    table->addItem(QString::fromStdString(std::to_string(keys[index])
+                                                 + ". paczka -> "
+                                                 + *values[index]));
+    delete keys;
+}

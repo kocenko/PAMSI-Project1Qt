@@ -2,7 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QListWidget>
 #include "message.h"
+#include "orderedList.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -26,6 +28,8 @@ private slots:
     void on_shuffle_button_clicked();
 
     void on_receive_button_clicked();
+
+    void display_lines(QListWidget* table, OrderedList<std::string>* line, int index);
 
 private:
     Ui::MainWindow *ui;
