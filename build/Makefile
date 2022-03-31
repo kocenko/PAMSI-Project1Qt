@@ -234,6 +234,7 @@ DIST          = /home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/spec_post.prf \
+		../JanDoAni/.qmake.stash \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -442,6 +443,7 @@ Makefile: ../JanDoAni/JandoAni.pro /home/gabriel/Qt/5.15.0/gcc_64/mkspecs/linux-
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -634,6 +636,7 @@ Makefile: ../JanDoAni/JandoAni.pro /home/gabriel/Qt/5.15.0/gcc_64/mkspecs/linux-
 /home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/qt_config.prf:
 /home/gabriel/Qt/5.15.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/toolchain.prf:
 /home/gabriel/Qt/5.15.0/gcc_64/mkspecs/features/default_pre.prf:

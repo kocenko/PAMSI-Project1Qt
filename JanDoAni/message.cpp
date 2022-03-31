@@ -39,16 +39,10 @@ OrderedList<std::string>* Message::sendMessage(int packages_num){
     int divisions = findBestDivisor(packages_num);
     int package_size = text_length/divisions;
 
-    auto start = std::chrono::high_resolution_clock::now();
 
     for (int i=0; i<divisions; ++i){
         sent_packages->addNode(i, new std::string(text_to_send.substr(i*package_size, package_size)));
     }
-
-    auto finish = std::chrono::high_resolution_clock::now();
-
-    std::chrono::duration<double> elapsed = finish - start;
-    std::cout << "Elapsed time send: " << elapsed.count() << " s\n";
 
     return sent_packages;
 }
@@ -60,8 +54,6 @@ OrderedList<std::string>* Message::shuffle(OrderedList<std::string>* list_to_shu
     int* keys = list_to_shuffle->getKeys();
     int current_size = list_to_shuffle->getSize();
     int current_key;
-
-    auto start = std::chrono::high_resolution_clock::now();
 
     std::random_shuffle(&keys[0], &keys[current_size]);
 
@@ -76,11 +68,6 @@ OrderedList<std::string>* Message::shuffle(OrderedList<std::string>* list_to_shu
     delete keys;
     delete list_to_shuffle;
 
-    auto finish = std::chrono::high_resolution_clock::now();
-
-    std::chrono::duration<double> elapsed = finish - start;
-    std::cout << "Elapsed time shuffled: " << elapsed.count() << " s\n";
-
     return new_list;
 }
 
@@ -90,7 +77,6 @@ OrderedList<std::string>* Message::receive(OrderedList<std::string>* list_to_uns
     std::string* current_value;
     int current_key;
 
-    auto start = std::chrono::high_resolution_clock::now();
 
     while(list_to_unshuffle->getSize() > 0){
         current_node = list_to_unshuffle->removeMin();
@@ -102,11 +88,6 @@ OrderedList<std::string>* Message::receive(OrderedList<std::string>* list_to_uns
     }
 
     delete list_to_unshuffle;
-
-    auto finish = std::chrono::high_resolution_clock::now();
-
-    std::chrono::duration<double> elapsed = finish - start;
-    std::cout << "Elapsed time received: " << elapsed.count() << " s\n";
 
     return new_list;
 }
