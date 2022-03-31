@@ -11,6 +11,7 @@ private:
     int size;
 public:
     OrderedList();
+    ~OrderedList();
 
     // Getter
     int* getKeys() const;

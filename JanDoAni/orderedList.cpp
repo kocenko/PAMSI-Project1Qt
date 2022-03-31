@@ -11,6 +11,17 @@ OrderedList<T>::OrderedList(){
 }
 
 template<typename T>
+OrderedList<T>::~OrderedList(){
+    Node<T>* node_to_read = head;
+
+    while(head != nullptr){
+        head = node_to_read->getPrevious();
+        delete node_to_read;
+        node_to_read = head;
+    }
+}
+
+template<typename T>
 int* OrderedList<T>::getKeys() const{
     Node<T>* node_to_read = head;
     int array_size = getSize();
