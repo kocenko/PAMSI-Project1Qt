@@ -7,6 +7,16 @@
 #include <fstream>
 #include <chrono>
 
+#if defined(_WIN32)
+#define SYS_CLEAR_COMMAND "cls"
+#endif
+
+#ifndef SYS_CLEAR_COMMAND
+#if defined(unix)
+#define SYS_CLEAR_COMMAND "clear"
+#endif
+#endif
+
 #define ERR_OPEN_FILE -1
 #define ERR_FILE_FORMAT -2
 
@@ -28,7 +38,9 @@ int main(int argc, char *argv[])
             int packages_number;
             std::string op = "u";
 
+            std::system(SYS_CLEAR_COMMAND);
             while(op[0] != 'q'){
+
                 std::cout << std::endl;
                 std::cout << "           MENU           " << std::endl;
                 std::cout << "==========================" << std::endl;
@@ -89,6 +101,10 @@ int main(int argc, char *argv[])
                     std::cout << "Could not find given option" << std::endl;
                     break;
                 }
+                std::getchar();
+                std::cout << "Wcisnij ENTER, aby kontynuowac ..." << std::endl;
+                std::getchar();
+                std::system(SYS_CLEAR_COMMAND);
             }
             delete temp;
         }
@@ -118,14 +134,14 @@ int main(int argc, char *argv[])
             }
 
             // Otwieranie pliku wyjsciowego
-            std::cout << "Podaj nazwe pliku wyjsciowego: ";
+            std::cout << "Podaj nazwe pliku wyjsciowego (niepusty plik zostanie nadpisany): ";
             std::cin >> output_file;
             out_stream.open(output_file, std::ios_base::out);
             if (!out_stream){
                 std::cerr << "Could not open file" << std::endl;
                 return ERR_OPEN_FILE;
             }
-            out_stream << "Word_length\tPackages_num\tSend_time\tShuffle_time\tReceive_time\t" << std::endl;
+            //out_stream << "Word_length\tPackages_num\tSend_time\tShuffle_time\tReceive_time\t" << std::endl;
 
             while(getline(in_stream, line)){
                 i = line.size() - 1;
@@ -146,16 +162,16 @@ int main(int argc, char *argv[])
                 msg.setText(given_string);
                 std::chrono::steady_clock::time_point begin_time = std::chrono::steady_clock::now();
                 temp = msg.sendMessage(packages_number);
-                out_stream << temp->getSize() << "\t";
+                //out_stream << temp->getSize() << "\t";
                 std::chrono::steady_clock::time_point send_time = std::chrono::steady_clock::now();
                 temp = msg.shuffle(temp);
                 std::chrono::steady_clock::time_point shuffle_time = std::chrono::steady_clock::now();
                 temp = msg.receive(temp);
                 std::chrono::steady_clock::time_point end_time = std::chrono::steady_clock::now();
 
-                out_stream << std::chrono::duration_cast<std::chrono::microseconds>(send_time - begin_time).count() << "\t";
-                out_stream << std::chrono::duration_cast<std::chrono::microseconds>(shuffle_time - send_time).count() << "\t";
-                out_stream << std::chrono::duration_cast<std::chrono::microseconds>(end_time - shuffle_time).count() << std::endl;
+                out_stream << std::chrono::duration_cast<std::chrono::nanoseconds>(send_time - begin_time).count() << "\t";
+                out_stream << std::chrono::duration_cast<std::chrono::nanoseconds>(shuffle_time - send_time).count() << "\t";
+                out_stream << std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - shuffle_time).count() << std::endl;
             }
             in_stream.close();
             out_stream.close();

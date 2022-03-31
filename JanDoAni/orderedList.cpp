@@ -148,11 +148,13 @@ void OrderedList<T>::addNode(int param_key, T* param_value){
 
 template<typename T>
 void OrderedList<T>::walkThrough(){
-    Node<T>* node_to_read = head;
-    while(node_to_read != nullptr){
-        node_to_read->display();
-        node_to_read = node_to_read->getPrevious();
+    int* keys = getKeys();
+    std::string** values = getValues();
+
+    for(int i=getSize()-1; i>=0; --i){
+        std::cout << keys[i] << ". paczka -> " << *values[i] << std::endl;
     }
+
     std::cout << std::endl;
 }
 
