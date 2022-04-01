@@ -1,50 +1,400 @@
-deviation
-feature
-sensitivity
+price
+drama
+shark
+blonde
+apathy
+paralyzed
+venture
+execution
+drink
+overall
+hover
+strap
+gallery
+assignment
+shop
+satisfaction
+bottom
+democratic
+entry
+prediction
+panic
+gesture
+vein
+breakdown
+hobby
+lecture
+church
+trustee
+literature
+undermine
+term
+tournament
+depressed
+liability
+superintendent
+federation
+safe
+glasses
+invite
 interest
-poison
-handy
-berry
-wriggle
-lesson
-trace
-braid
-engineer
-science
-pasture
-hypothesis
-ticket
-inspiration
-nature
-architect
-closed
-final
-origin
-snarl
-brilliance
-unrest
-crime
-trip
-silence
-action
-avant-garde
-sunshine
-brainstorm
-winner
-tear
-deprivation
-defeat
-hall
-shallow
-progressive
-revolution
+hook
+publication
+dismiss
+buttocks
+mobile
+fibre
+royalty
+wilderness
+throw
+major
+upset
+vessel
+hold
+lose
 truck
-please
-fare
-muscle
-residence
-soup
-thick
-broccoli
-suspect
-cultivate
+deck
+exotic
+tongue
+splurge
+extinct
+crosswalk
+retreat
+fool
+celebration
+indulge
+lazy
+withdrawal
+difficult
+cunning
+grip
+appreciate
+campaign
+urgency
+unique
+headquarters
+shiver
+analysis
+step
+economist
+loyalty
+favorable
+drop
+folklore
+offensive
+flexible
+record
+mirror
+prestige
+revive
+lend
+district
+hobby
+back
+jail
+chemistry
+ignite
+cattle
+freckle
+curl
+divorce
+high
+star
+Europe
+include
+departure
+weigh
+facility
+bring
+curtain
+strong
+chaos
+score
+execution
+experienced
+album
+infection
+compensation
+neck
+lace
+thread
+tumour
+anticipation
+club
+redeem
+formation
+flex
+compact
+wild
+hour
+terrace
+revenge
+laundry
+senior
+moral
+garage
+headline
+mist
+salmon
+season
+privacy
+simplicity
+reform
+witch
+measure
+hand
+groan
+elect
+monkey
+harmony
+pilot
+disk
+shiver
+function
+cattle
+snarl
+relax
+fund
+witness
+theft
+diplomat
+tape
+pole
+clinic
+memorandum
+expansion
+efflux
+football
+paint
+recording
+objective
+love
+bronze
+exclusive
+storage
+page
+lecture
+heroin
+chief
+desert
+cooperation
+assume
+convention
+recycle
+courtesy
+financial
+attract
+current
+conception
+private
+learn
+flash
+glove
+half
+cucumber
+foot
+cooperative
+adviser
+minority
+bland
+distortion
+Potato wedges probably are not best for relationships.
+Their argument could be heard across the parking lot.
+Nobody has encountered an explosive daisy and lived to tell the tale.
+Rock music approaches at high velocity.
+The father died during childbirth.
+It was obvious she was hot, sweaty, and tired.
+I ate a sock because people on the Internet told me to.
+Being unacquainted with the chief raccoon was harming his prospects for promotion.
+I cheated while playing the darts tournament by using a longbow.
+I know many children ask for a pony, but I wanted a bicycle with rockets strapped to it.
+The pigs were insulted that they were named hamburgers.
+You'll see the rainbow bridge after it rains cats and dogs.
+If you like tuna and tomato sauce, try combining the two, it’s really not as bad as it sounds.
+She did not cheat on the test, for it was not the right thing to do.
+There is no better feeling than staring at a wall with closed eyes.
+He went on a whiskey diet and immediately lost three days.
+It turns out you don't need all that stuff you insisted you did.
+The Japanese yen for commerce is still well-known.
+Please put on these earmuffs because I can't you hear.
+It didn't make sense unless you had the power to eat colors.
+The view from the lighthouse excited even the most seasoned traveler.
+We have young kids who often walk into our room at night for various reasons including clowns in the closet.
+Each person who knows you has a different perception of who you are.
+They were excited to see their first sloth.
+She was only made the society president because she can whistle with her toes.
+It's always a good idea to seek shelter from the evil gaze of the sun.
+There's a reason that roses have thorns.
+There should have been a time and a place, but this wasn't it.
+She lived on Monkey Jungle Road and that seemed to explain all of her strangeness.
+He decided to count all the sand on the beach as a hobby.
+The door swung open to reveal pink giraffes and red elephants.
+If any cop asks you where you were, just say you were visiting Kansas.
+My biggest joy is roasting almonds while stalking prey.
+There were three sphered rocks congregating in a cubed room.
+He would only survive if he kept the fire going and he could hear thunder in the distance.
+It's important to remember to be aware of rampaging grizzly bears.
+Instead of a bachelorette party
+The spa attendant applied the deep cleaning mask to the gentleman’s back.
+The knives were out and she was sharpening hers.
+That is an appealing treasure map that I can't read.
+It was a slippery slope and he was willing to slide all the way to the deepest depths.
+A song can make or ruin a person’s day if they let it get to them.
+Tomorrow will bring something new, so leave today as a memory.
+A dead duck doesn't fly backward.
+Jerry liked to look at paintings while eating garlic ice cream.
+Nancy thought the best way to create a welcoming home was to line it with barbed wire.
+Mary realized if her calculator had a history, it would be more embarrassing than her computer browser history.
+I think I will buy the red car, or I will lease the blue one.
+The child’s favorite Christmas gift was the large box her father’s lawnmower came in.
+He played the game as if his life depended on it and the truth was that it did.
+The old apple revels in its authority.
+I can't believe this is the eighth time I'm smashing open my piggy bank on the same day!
+She tilted her head back and let whip cream stream into her mouth while taking a bath.
+She had a habit of taking showers in lemonade.
+They're playing the piano while flying in the plane.
+He loved eating his bananas in hot dog buns.
+I covered my friend in baby oil.
+Instead of a bachelorette party
+She was the type of girl that always burnt sugar to show she cared.
+The balloons floated away along with all my hopes and dreams.
+The bees decided to have a mutiny against their queen.
+She advised him to come back at once.
+We will not allow you to bring your pet armadillo along.
+People keep telling me "orange" but I still prefer "pink".
+My uncle's favorite pastime was building cars out of noodles.
+We should play with legos at camp.
+He excelled at firing people nicely.
+His get rich quick scheme was to grow a cactus farm.
+The elderly neighborhood became enraged over the coyotes who had been blamed for the poodle’s disappearance.
+Harrold felt confident that nobody would ever suspect his spy pigeon.
+The lyrics of the song sounded like fingernails on a chalkboard.
+The tart lemonade quenched her thirst, but not her longing.
+With a single flip of the coin, his life changed forever.
+Grape jelly was leaking out the hole in the roof.
+She cried diamonds.
+Boulders lined the side of the road foretelling what could come next.
+Today I heard something new and unmemorable.
+She wondered what his eyes were saying beneath his mirrored sunglasses.
+Lightning Paradise was the local hangout joint where the group usually ended up spending the night.
+She was sad to hear that fireflies are facing extinction due to artificial light, habitat loss, and pesticides.
+It doesn't sound like that will ever be on my travel list.
+The tour bus was packed with teenage girls heading toward their next adventure.
+He had concluded that pigs must be able to fly in Hog Heaven.
+Even with the snow falling outside, she felt it appropriate to wear her bikini.
+The sun had set and so had his dreams.
+They finished building the road they knew no one would ever use.
+It was always dangerous to drive with him since he insisted the safety cones were a slalom course.
+You'll see the rainbow bridge after it rains cats and dogs.
+The hand sanitizer was actually clear glue.
+Each person who knows you has a different perception of who you are.
+Douglas figured the best way to succeed was to do the opposite of what he'd been doing all his life.
+Her scream silenced the rowdy teenagers.
+He stepped gingerly onto the bridge knowing that enchantment awaited on the other side.
+In hopes of finding out the truth, he entered the one-room library.
+Dan ate the clouds like cotton candy.
+The child’s favorite Christmas gift was the large box her father’s lawnmower came in.
+The old rusted farm equipment surrounded the house predicting its demise.
+Today I dressed my unicorn in preparation for the race.
+Nancy decided to make the porta-potty her home.
+He was the only member of the club who didn't like plum pudding.
+The miniature pet elephant became the envy of the neighborhood.
+Now I need to ponder my existence and ask myself if I'm truly real
+The father died during childbirth.
+He liked to play with words in the bathtub.
+The best part of marriage is animal crackers with peanut butter.
+He found the chocolate covered roaches quite tasty.
+The dead trees waited to be ignited by the smallest spark and seek their revenge.
+Every manager should be able to recite at least ten nursery rhymes backward.
+Jeanne wished she has chosen the red button.
+It was the best sandcastle he had ever seen.
+She wanted a pet platypus but ended up getting a duck and a ferret instead.
+Of course, she loves her pink bunny slippers.
+It's not possible to convince a monkey to give you a banana by promising it infinite bananas when they die.
+Peanut butter and jelly caused the elderly lady to think about her past.
+Gwen had her best sleep ever on her new bed of nails.
+Watching the geriatric men’s softball team brought back memories of 3 yr olds playing t-ball.
+In hopes of finding out the truth, he entered the one-room library.
+One small action would change her life, but whether it would be for better or for worse was yet to be determined.
+Three generations with six decades of life experience.
+Hit me with your pet shark!
+She had a difficult time owning up to her own crazy self.
+The group quickly understood that toxic waste was the most effective barrier to use against the zombies.
+Jerry liked to look at paintings while eating garlic ice cream.
+They say people remember important moments in their life well, yet no one even remembers their own birth.
+She cried diamonds.
+She was too short to see over the fence.
+Strawberries must be the one food that doesn't go well with this brand of paint.
+I checked to make sure that he was still alive.
+Iron pyrite is the most foolish of all minerals.
+He decided to fake his disappearance to avoid jail.
+If my calculator had a history, it would be more embarrassing than my browser history.
+There have been days when I wished to be separated from my body, but today wasn’t one of those days.
+The golden retriever loved the fireworks each Fourth of July.
+The fish listened intently to what the frogs had to say.
+I like to leave work after my eight-hour tea-break.
+The minute she landed she understood the reason this was a fly-over state.
+She found it strange that people use their cellphones to actually talk to one another.
+Excitement replaced fear until the final moment.
+I'm worried by the fact that my daughter looks to the local carpet seller as a role model.
+Nothing is as cautiously cuddly as a pet porcupine.
+He went back to the video to see what had been recorded and was shocked at what he saw.
+I'd always thought lightning was something only I could see.
+He put heat on the wound to see what would grow.
+Just because the water is red doesn't mean you can't drink it.
+Her life in the confines of the house became her new normal.
+A kangaroo is really just a rabbit on steroids.
+She tilted her head back and let whip cream stream into her mouth while taking a bath.
+Mothers spend months of their lives waiting on their children.
+I thought red would have felt warmer in summer but I didn't think about the equator.
+Her hair was windswept as she rode in the black convertible.
+Her daily goal was to improve on yesterday.
+The pigs were insulted that they were named hamburgers.
+He hated that he loved what she hated about hate.
+There's a growing trend among teenagers of using frisbees as go-cart wheels.
+Traveling became almost extinct during the pandemic.
+As the years pass by, we all know owners look more and more like their dogs.
+This is the last random sentence I will be writing and I am going to stop mid-sent
+People keep telling me "orange" but I still prefer "pink".
+Jim liked driving around town with his hazard lights on.
+Eating eggs on Thursday for choir practice was recommended.
+The teenage boy was accused of breaking his arm simply to get out of the test.
+While all her friends were positive that Mary had a sixth sense, she knew she actually had a seventh sense.
+There was coal in his stocking and he was thrilled.
+Beach-combing replaced wine tasting as his new obsession.
+The sun had set and so had his dreams.
+She moved forward only because she trusted that the ending she now was going through must be followed by a new beginning.
+The quick brown fox jumps over the lazy dog.
+Garlic ice-cream was her favorite.
+She learned that water bottles are no longer just to hold liquid, but they're also status symbols.
+Tomatoes make great weapons when water balloons aren’t available.
+The team members were hard to tell apart since they all wore their hair in a ponytail.
+The spa attendant applied the deep cleaning mask to the gentleman’s back.
+He fumbled in the darkness looking for the light switch, but when he finally found it there was someone already there.
+The two walked down the slot canyon oblivious to the sound of thunder in the distance.
+Patricia loves the sound of nails strongly pressed against the chalkboard.
+Choosing to do nothing is still a choice, after all.
+He poured rocks in the dungeon of his mind.
+She traveled because it cost the same as therapy and was a lot more enjoyable.
+The shooter says goodbye to his love.
+I ate a sock because people on the Internet told me to.
+Happiness can be found in the depths of chocolate pudding.
+The book is in front of the table.
+Seek success, but always be prepared for random cats.
+The sudden rainstorm washed crocodiles into the ocean.
+Today I dressed my unicorn in preparation for the race.
+My uncle's favorite pastime was building cars out of noodles.
+I was very proud of my nickname throughout high school but today- I couldn’t be any different to what my nickname was.
+Sometimes, all you need to do is completely make an ass of yourself and laugh it off to realise that life isn’t so bad after all.
+She had some amazing news to share but nobody to share it with.
+It was the best sandcastle he had ever seen.
+There have been days when I wished to be separated from my body, but today wasn’t one of those days.
+He invested some skill points in Charisma and Strength.
+Jason lived his life by the motto, "Anything worth doing is worth doing poorly.
+It's difficult to understand the lengths he'd go to remain short.
+He picked up trash in his spare time to dump in his neighbor's yard.
+The manager of the fruit stand always sat and only sold vegetables.
+Shakespeare was a famous 17th-century diesel mechanic.
+He was an introvert that extroverts seemed to love.
+He ended up burning his fingers poking someone else's fire.
+She did a happy dance because all of the socks from the dryer matched.

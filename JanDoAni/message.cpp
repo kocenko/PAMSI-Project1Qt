@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <chrono>
+#include <random>
 
 #include "message.h"
 #include "orderedList.h"
@@ -55,7 +56,11 @@ OrderedList<std::string>* Message::shuffle(OrderedList<std::string>* list_to_shu
     int current_size = list_to_shuffle->getSize();
     int current_key;
 
-    std::random_shuffle(&keys[0], &keys[current_size]);
+    std::random_device r;
+    std::seed_seq seed{r(), r(), r(), r(), r(), r(), r(), r()};
+    std::mt19937 eng(seed);
+
+    std::shuffle(&keys[0], &keys[current_size], eng);
 
     for(int i=current_size-1; i>=0; i--){
         current_key = keys[i];
@@ -65,7 +70,7 @@ OrderedList<std::string>* Message::shuffle(OrderedList<std::string>* list_to_shu
 
         delete current_node;
     }
-    delete keys;
+    delete[] keys;
     delete list_to_shuffle;
 
     return new_list;
